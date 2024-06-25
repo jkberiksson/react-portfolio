@@ -11,7 +11,8 @@ function Sideproject({ project }) {
         <a
           className='text-sm md:text-base text-teal-500 underline'
           href={project.link}
-          target='_blank'>
+          target='_blank'
+          rel='noreferrer'>
           Go to project
         </a>
       </div>
@@ -19,7 +20,8 @@ function Sideproject({ project }) {
         <a
           className='text-sm md:text-base text-teal-500 underline'
           href={project.repo}
-          target='_blank'>
+          target='_blank'
+          rel='noreferrer'>
           Github Repo
         </a>
       </div>

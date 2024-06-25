@@ -10,7 +10,8 @@ function SchoolProject({ project }) {
       <a
         className='text-sm md:text-base text-teal-500 inline-block underline mb-4'
         href={project.link}
-        target='_blank'>
+        target='_blank'
+        rel='noreferrer'>
         Go to project
       </a>
       <div className='flex flex-wrap gap-4 mb-8'>
