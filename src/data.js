@@ -22,7 +22,8 @@ export const schoolProjects = [
 
   {
     title: 'JS Webapp Design',
-    description: 'This is the description',
+    description:
+      'Web application built using vanilla javascript and a lot of different javascript API:s. Highlights train delays in Sweden.',
     link: 'https://www.student.bth.se/~jaei23/dbwebb-kurser/webapp/me/kmom10/proj/',
     tags: ['javascript', 'web components', 'css'],
   },

@@ -7,3 +7,11 @@
 * {
   font-family: 'Poppins';
 }
+
+.fade-circle {
+  background: radial-gradient(
+    circle,
+    rgba(53, 206, 160, 0.2) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
