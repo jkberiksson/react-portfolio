@@ -15,7 +15,8 @@ export const schoolProjects = [
   },
   {
     title: 'Flask Spellchecker App',
-    description: 'This is the description. Not responsive',
+    description:
+      'This application is bult using the python framework flask. Its an app where the user can check for certain words from a dictionary but also change dictionaries to ones with more words.',
     link: 'https://www.student.bth.se/~jaei23/dbwebb-kurser/oopython/me/kmom10/spellchecker/app.cgi',
     tags: ['python', 'flask', 'html', 'css'],
   },
