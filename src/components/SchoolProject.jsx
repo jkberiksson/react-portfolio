@@ -17,7 +17,7 @@ function SchoolProject({ project }) {
       <div className='flex flex-wrap gap-4 mb-8'>
         {project.tags.map((tag, idx) => (
           <p
-            className='text-xs text-teal-500 py-1 px-3 rounded-md border border-gray-700'
+            className='text-xs bg-teal-500 py-1 px-3 rounded-md text-black'
             key={idx}>
             {tag}
           </p>

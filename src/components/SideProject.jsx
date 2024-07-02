@@ -1,6 +1,13 @@
+import { useTheme } from '../context/ThemeContext';
+
 function Sideproject({ project }) {
+  const [theme, setTheme] = useTheme();
+
   return (
-    <div className='bg-gray-900 rounded p-4'>
+    <div
+      className={`${
+        theme === 'dark' ? 'bg-gray-900 rounded p-4' : 'bg-gray-100 rounded p-4'
+      }`}>
       <h1 className='text-sm md:text-base text-teal-500 font-medium mb-2'>
         {project.title}
       </h1>
@@ -28,7 +35,7 @@ function Sideproject({ project }) {
       <div className='flex flex-wrap gap-4'>
         {project.tags.map((tag, idx) => (
           <p
-            className='text-xs text-teal-500 py-1 px-3 rounded-md border border-gray-700'
+            className='text-xs bg-teal-500 py-1 px-3 rounded-md text-black'
             key={idx}>
             {tag}
           </p>
