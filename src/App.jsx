@@ -6,7 +6,7 @@ import SideProjects from './components/SideProjects';
 import { useTheme } from './context/ThemeContext';
 
 function App() {
-  const [theme, setTheme] = useTheme();
+  const [theme] = useTheme();
   return (
     <div
       className={`${

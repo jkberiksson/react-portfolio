@@ -1,7 +1,7 @@
 import { useTheme } from '../context/ThemeContext';
 
 function Sideproject({ project }) {
-  const [theme, setTheme] = useTheme();
+  const [theme] = useTheme();
 
   return (
     <div
