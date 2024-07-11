@@ -1,7 +1,6 @@
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import { Moon, Sun } from 'react-feather';
-import { useEffect } from 'react';
 
 function Header() {
   const [theme, setTheme] = useTheme();
