@@ -1,6 +1,7 @@
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import { Moon, Sun } from 'react-feather';
+import { motion } from 'framer-motion';
 
 function Header() {
   const [theme, setTheme] = useTheme();
@@ -15,7 +16,11 @@ function Header() {
   };
 
   return (
-    <header className='flex items-center justify-between'>
+    <motion.header
+      initial={{ y: '-100vh' }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1 }}
+      className='flex items-center justify-between'>
       <div className='flex items-center'>
         <img
           className='h-20 w-20'
@@ -39,7 +44,7 @@ function Header() {
           {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
 

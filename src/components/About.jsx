@@ -1,10 +1,14 @@
 import { useLanguage } from '../context/LanguageContext';
+import { motion } from 'framer-motion';
 
 function About() {
   const [language] = useLanguage();
 
   return (
-    <section>
+    <motion.section
+      initial={{ opacity: 0, scale: 0.7, y: 100 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.2 }}>
       <h1 className='text-lg md:text-xl font-medium mb-2'>About Me</h1>
       {language === 'en' ? (
         <p className='text-sm md:text-base leading-6 opacity-70'>
@@ -30,7 +34,7 @@ function About() {
           fotboll och resa. 🏌️‍♂️🏋️‍♂️⚽✈️
         </p>
       )}
-    </section>
+    </motion.section>
   );
 }
 

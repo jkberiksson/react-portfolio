@@ -1,12 +1,23 @@
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useAnimate, useInView, motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 function Sideproject({ project }) {
   const [theme] = useTheme();
   const [language] = useLanguage();
+  const [scope, animate] = useAnimate();
+  const inView = useInView(scope, { once: true });
+
+  useEffect(() => {
+    inView && animate(scope.current, { scale: 1, y: 0 }, { duration: 0.6 });
+  }, [inView, animate, scope]);
 
   return (
-    <div
+    <motion.div
+      initial={{ scale: 0.8, y: 50 }}
+      id='target'
+      ref={scope}
       className={`${
         theme === 'dark' ? 'bg-gray-900 rounded p-4' : 'bg-gray-100 rounded p-4'
       }`}>
@@ -43,7 +54,7 @@ function Sideproject({ project }) {
           </p>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
