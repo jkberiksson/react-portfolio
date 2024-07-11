@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
+import CvButton from './components/CvButton';
 import SchoolProjects from './components/SchoolProjects';
 import SideProjects from './components/SideProjects';
 import { useTheme } from './context/ThemeContext';
@@ -16,6 +17,7 @@ function App() {
         <div className='h-80 w-80 absolute left-1/2 top-5 -translate-x-1/2 rounded-full fade-circle'></div>
         <Header />
         <About />
+        <CvButton />
         <SchoolProjects />
         <SideProjects />
         <Contact />

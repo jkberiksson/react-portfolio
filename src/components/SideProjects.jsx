@@ -1,4 +1,4 @@
-import { sideProjects } from '../data.js';
+import { sideProjects } from '../utils/data.js';
 import SideProject from './SideProject';
 
 function SideProjects() {

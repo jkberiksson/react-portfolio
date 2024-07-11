@@ -15,10 +15,6 @@ function Header() {
     setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'sv' : 'en'));
   };
 
-  useEffect(() => {
-    console.log(language);
-  }, [language]);
-
   return (
     <header className='flex items-center justify-between'>
       <div className='flex items-center'>

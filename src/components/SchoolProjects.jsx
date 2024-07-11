@@ -1,4 +1,4 @@
-import { schoolProjects } from '../data.js';
+import { schoolProjects } from '../utils/data.js';
 import SchoolProject from './SchoolProject';
 
 function SchoolProjects() {
