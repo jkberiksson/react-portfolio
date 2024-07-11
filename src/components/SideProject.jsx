@@ -1,7 +1,9 @@
 import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
 
 function Sideproject({ project }) {
   const [theme] = useTheme();
+  const [language] = useLanguage();
 
   return (
     <div
@@ -12,7 +14,7 @@ function Sideproject({ project }) {
         {project.title}
       </h1>
       <p className='text-sm md:text-base leading-6 opacity-70 mb-4'>
-        {project.description}
+        {language === 'en' ? project.description_en : project.description_sv}
       </p>
       <div className='mb-2'>
         <a
@@ -20,7 +22,7 @@ function Sideproject({ project }) {
           href={project.link}
           target='_blank'
           rel='noreferrer'>
-          Go to project
+          {language === 'en' ? 'Go to project' : 'Gå till projekt'}
         </a>
       </div>
       <div className='mb-4'>

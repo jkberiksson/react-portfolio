@@ -1,12 +1,23 @@
 import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
 import { Moon, Sun } from 'react-feather';
+import { useEffect } from 'react';
 
 function Header() {
   const [theme, setTheme] = useTheme();
+  const [language, setLanguage] = useLanguage();
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   };
+
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'sv' : 'en'));
+  };
+
+  useEffect(() => {
+    console.log(language);
+  }, [language]);
 
   return (
     <header className='flex items-center justify-between'>
@@ -18,11 +29,20 @@ function Header() {
         />
         <div>
           <h1 className='text-base font-medium'>Jakob Eriksson</h1>
-          <h2 className='text-sm font-medium opacity-65'>Junior Developer</h2>
+          <h2 className='text-sm font-medium opacity-65'>
+            {language === 'en' ? 'Junior Developer' : 'Junior Utvecklare'}
+          </h2>
         </div>
       </div>
-      <div onClick={toggleTheme} className='cursor-pointer'>
-        {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
+      <div className='flex items-center gap-4'>
+        <div
+          onClick={toggleLanguage}
+          className='cursor-pointer p-1 font-medium'>
+          {language === 'sv' ? 'EN' : 'SV'}
+        </div>
+        <div onClick={toggleTheme} className='cursor-pointer'>
+          {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
+        </div>
       </div>
     </header>
   );
