@@ -9,7 +9,7 @@ export const schoolProjects = [
     tags: ['javascript', 'html', 'css', 'jsdoc'],
   },
   {
-    title: 'Portfolio design',
+    title: 'Portfolio Design',
     description_en:
       'The purpose of this site was to enhance my skills in css. The site is built with the cms Pico and twig as template engine. Im also using some markdown for the content and sass for css.',
     description_sv:

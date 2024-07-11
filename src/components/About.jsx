@@ -9,7 +9,9 @@ function About() {
       initial={{ opacity: 0, scale: 0.7, y: 100 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.2 }}>
-      <h1 className='text-lg md:text-xl font-medium mb-2'>About Me</h1>
+      <h1 className='text-lg md:text-xl font-medium mb-2'>
+        {language === 'en' ? 'About Me' : 'Om Mig'}
+      </h1>
       {language === 'en' ? (
         <p className='text-sm md:text-base leading-6 opacity-70'>
           I'm Jakob, a 28-year-old web developer born and raised in Kalmar,
