@@ -1,9 +1,6 @@
 import Header from './components/Header';
-import About from './components/About';
 import Contact from './components/Contact';
-import CvButton from './components/CvButton';
-import SchoolProjects from './components/SchoolProjects';
-import SideProjects from './components/SideProjects';
+import Projects from './components/Projects';
 import { useTheme } from './context/ThemeContext';
 
 function App() {
@@ -16,10 +13,7 @@ function App() {
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col gap-16'>
         <div className='h-80 w-80 absolute left-1/2 top-5 -translate-x-1/2 rounded-full fade-circle'></div>
         <Header />
-        <About />
-        <CvButton />
-        <SideProjects />
-        <SchoolProjects />
+        <Projects />
         <Contact />
       </div>
     </div>

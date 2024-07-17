@@ -1,4 +1,4 @@
-export const schoolProjects = [
+export const projects = [
   {
     title: 'Javascript Games',
     description_en:
@@ -35,9 +35,6 @@ export const schoolProjects = [
     link: 'https://www.student.bth.se/~jaei23/dbwebb-kurser/webapp/me/kmom10/proj/',
     tags: ['javascript', 'web components', 'css'],
   },
-];
-
-export const sideProjects = [
   {
     title: 'Serenita Website Design',
     description_en:

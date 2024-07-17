@@ -2,7 +2,7 @@ import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
 import { Moon, Sun } from 'react-feather';
 import { motion } from 'framer-motion';
-
+import CvButton from './CvButton';
 function Header() {
   const [theme, setTheme] = useTheme();
   const [language, setLanguage] = useLanguage();
@@ -30,7 +30,7 @@ function Header() {
         <div>
           <h1 className='text-base font-medium'>Jakob Eriksson</h1>
           <h2 className='text-sm font-medium opacity-65'>
-            {language === 'en' ? 'Junior Developer' : 'Junior Utvecklare'}
+            {language === 'en' ? 'Frontend Developer' : 'Frontend Utvecklare'}
           </h2>
         </div>
       </div>
@@ -43,6 +43,7 @@ function Header() {
         <div onClick={toggleTheme} className='cursor-pointer'>
           {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
         </div>
+        <CvButton />
       </div>
     </motion.header>
   );

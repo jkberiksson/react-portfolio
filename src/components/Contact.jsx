@@ -2,7 +2,7 @@ import { GitHub, Linkedin, Mail } from 'react-feather';
 
 function Contact() {
   return (
-    <section className=' pt-4 mb-10 border-t border-gray-700 flex flex-col gap-4 justify-center items-center md:items-start'>
+    <section className='mb-10 flex flex-col gap-4 justify-center items-center md:items-start'>
       <a
         className='text-sm md:text-base opacity-70 flex items-center gap-2'
         href='mailto: jkberiksson@gmail.com'>
