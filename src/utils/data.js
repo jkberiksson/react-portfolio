@@ -39,6 +39,16 @@ export const schoolProjects = [
 
 export const sideProjects = [
   {
+    title: 'Serenita Website Design',
+    description_en:
+      'Experience Serenita, where seamless design meets dynamic animations. Explore our beautifully crafted website built with React, Framer Motion, and Tailwind CSS.',
+    description_sv:
+      'Upptäck Serenita, där sömlös design möter dynamiska animationer. Utforska vår vackert utformade webbplats byggd med React, Framer Motion och Tailwind CSS.',
+    link: 'https://jkberiksson-serenita-website-design.netlify.app/',
+    repo: 'https://github.com/jkberiksson/Serenita-website-design',
+    tags: ['react', 'framer motion', 'tailwind css'],
+  },
+  {
     title: 'Weather App',
     description_en:
       'Track global weather updates effortlessly with a responsive design and smooth animations powered by Framer Motion. Tailwind CSS and React-Icons enhance styling and usability for intuitive weather tracking.',

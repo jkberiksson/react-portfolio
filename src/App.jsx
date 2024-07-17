@@ -18,8 +18,8 @@ function App() {
         <Header />
         <About />
         <CvButton />
-        <SchoolProjects />
         <SideProjects />
+        <SchoolProjects />
         <Contact />
       </div>
     </div>
