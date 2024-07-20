@@ -1,5 +1,24 @@
 export const projects = [
   {
+    title: 'JS Webapp Design',
+    description_en:
+      'Web application built using vanilla javascript and a lot of different javascript API:s. Highlights train delays in Sweden.',
+    description_sv:
+      'Webbapplikation byggd med vanilla javascript och många olika javascript API:er. Visar tågförseningar i Sverige.',
+    link: 'https://www.student.bth.se/~jaei23/dbwebb-kurser/webapp/me/kmom10/proj/',
+    tags: ['javascript', 'web components', 'css'],
+  },
+  {
+    title: 'Serenita Website Design',
+    description_en:
+      'Experience Serenita, where seamless design meets dynamic animations. Explore our beautifully crafted website built with React, Framer Motion, and Tailwind CSS.',
+    description_sv:
+      'Upptäck Serenita, där sömlös design möter dynamiska animationer. Utforska vår vackert utformade webbplats byggd med React, Framer Motion och Tailwind CSS.',
+    link: 'https://jkberiksson-serenita-website-design.netlify.app/',
+    repo: 'https://github.com/jkberiksson/Serenita-website-design',
+    tags: ['react', 'framer motion', 'tailwind css'],
+  },
+  {
     title: 'Javascript Games',
     description_en:
       'A mix of 5 games built with HTML, CSS and vanilla JS. This project was the final examination in the javascript course at university. Not responsive!',
@@ -25,25 +44,6 @@ export const projects = [
       'Denna applikation är byggd med python-ramverket flask. Det är en app där användaren kan kontrollera vissa ord från en ordbok men också byta ordböcker till sådana med fler ord.',
     link: 'https://www.student.bth.se/~jaei23/dbwebb-kurser/oopython/me/kmom10/spellchecker/app.cgi',
     tags: ['python', 'flask', 'html', 'css'],
-  },
-  {
-    title: 'JS Webapp Design',
-    description_en:
-      'Web application built using vanilla javascript and a lot of different javascript API:s. Highlights train delays in Sweden.',
-    description_sv:
-      'Webbapplikation byggd med vanilla javascript och många olika javascript API:er. Visar tågförseningar i Sverige.',
-    link: 'https://www.student.bth.se/~jaei23/dbwebb-kurser/webapp/me/kmom10/proj/',
-    tags: ['javascript', 'web components', 'css'],
-  },
-  {
-    title: 'Serenita Website Design',
-    description_en:
-      'Experience Serenita, where seamless design meets dynamic animations. Explore our beautifully crafted website built with React, Framer Motion, and Tailwind CSS.',
-    description_sv:
-      'Upptäck Serenita, där sömlös design möter dynamiska animationer. Utforska vår vackert utformade webbplats byggd med React, Framer Motion och Tailwind CSS.',
-    link: 'https://jkberiksson-serenita-website-design.netlify.app/',
-    repo: 'https://github.com/jkberiksson/Serenita-website-design',
-    tags: ['react', 'framer motion', 'tailwind css'],
   },
   {
     title: 'Weather App',

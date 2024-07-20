@@ -1,8 +1,18 @@
 import { GitHub, Linkedin, Mail } from 'react-feather';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 function Contact() {
+  const ref = useRef();
+
+  const inView = useInView(ref, { once: true, amount: 0.5 });
+
   return (
-    <section className='mb-10 flex flex-col gap-4 justify-center items-center md:items-start'>
+    <motion.section
+      animate={{ opacity: inView ? 1 : 0 }}
+      transition={{ duration: 0.7 }}
+      ref={ref}
+      className='mb-10 flex flex-col gap-4 justify-center items-center md:items-start'>
       <a
         className='text-sm md:text-base opacity-70 flex items-center gap-2'
         href='mailto: jkberiksson@gmail.com'>
@@ -21,7 +31,7 @@ function Contact() {
         <p>Linkedin</p>
         <Linkedin size={20} />
       </a>
-    </section>
+    </motion.section>
   );
 }
 

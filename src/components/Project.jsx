@@ -1,23 +1,10 @@
 import { useLanguage } from '../context/LanguageContext';
-import { useAnimate, useInView, motion } from 'framer-motion';
-import { useEffect } from 'react';
 
 function SchoolProject({ project }) {
   const [language] = useLanguage();
-  const [scope, animate] = useAnimate();
-  const inView = useInView(scope, { once: true });
-
-  useEffect(() => {
-    inView &&
-      animate(scope.current, { scale: 1, y: 0, opacity: 1 }, { duration: 0.6 });
-  }, [inView, animate, scope]);
 
   return (
-    <motion.div
-      initial={{ scale: 0.8, y: 50, opacity: 0 }}
-      id='target'
-      ref={scope}
-      className='border-b border-gray-700'>
+    <div className='border-b border-gray-700'>
       <h1 className='text-sm md:text-base text-teal-500 font-medium mb-2'>
         {project.title}
       </h1>
@@ -40,7 +27,7 @@ function SchoolProject({ project }) {
           </p>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }
 
